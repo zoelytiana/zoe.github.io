@@ -1,0 +1,106 @@
+
+.parcours {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: gray 0px 5px 8px;
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+  flex-direction: row;
+  display: flex;
+  padding: 0;
+  position: relative;
+}
+
+.parcours .titre {
+  position: absolute;
+  right: 13px;
+  bottom: 0px;
+  font-weight: bold;
+  transform: translate(0);
+  transition: transform 200ms 60ms linear;
+}
+
+.parcours p {
+  margin: 10px 10px;
+}
+.parcours:hover .titre {
+  transform: translate(-180px);
+}
+
+.parcours:hover .fas {
+  transform: rotate(1turn);
+}
+.parcours:hover .card__check {
+    height: 100%;
+  transform: translateY(-176px);
+}
+.parcours:hover .card__text {
+  width: 60%;
+}
+.parcours:hover .card__title {
+  width: 70%;
+}
+.parcours .card__text {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: width 250ms linear;
+  width: 100%;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.parcours .card__title {
+  width: 100%;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: width 200ms 50ms linear;
+}
+
+.card__check {
+  background-color: rgb(255, 251, 251);
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transform: translate(0px);
+  bottom: -176px;
+  transition: transform 450ms ease-in-out;
+  position: absolute;
+}
+
+.card__check .fas {
+  color: white;
+  font-size: 2em;
+  transition: transform 450ms;
+}
+
+.parcours--anim1 {
+  -webkit-animation: slide 0.5s;
+  animation: slide 0.5s;
+}
+
+.parcours--anim2 {
+  -webkit-animation: slide 1s;
+  animation: slide 1s;
+}
+
+.parcours--anim3 {
+  -webkit-animation: slide 1.5s;
+  animation: slide 1.5s;
+}
+
+.parcours--anim4 {
+  -webkit-animation: slide 2s;
+  animation: slide 2s;
+}
+
+
+/*# sourceMappingURL=main.css.map */
